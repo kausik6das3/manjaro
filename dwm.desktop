@@ -1,0 +1,5 @@
+#/usr/share/xsessions/dwm.desktop
+[Desktop Entry]
+Name=DWM
+Exec=~/.xinitrc
+
