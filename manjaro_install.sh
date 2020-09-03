@@ -13,6 +13,8 @@ sudo pacman -S --noconfirm --needed liferea
 sudo pacman -S --noconfirm --needed rhythmbox cmus
 #_________For_mesa_OpenGL_________________________#
 sudo pacman -S --noconfirm --needed libgl mesa 
+#_________HDD_shock_protection____________________#
+sudo pacman -S --noconfirm --needed  hdapsd
 #_________For_OpenCL_ob_Gen7_Ivy Bridge_Intel_GPU_____#
 sudo pacman -S --noconfirm --needed beignet ocl-icd opencl-headers
 #_________For_Emoji_______________________________#
