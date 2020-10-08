@@ -6,7 +6,8 @@ sudo pacman -S --noconfirm --needed gcc gcc-fortran cmake pkg-config
 sudo pacman -S --noconfirm --needed gnuplot emacs vim
 sudo pacman -S --noconfirm --needed hugo texatudio 
 sudo pacman -S --noconfirm --needed pandoc pandoc-citeproc
-sudo pacman -S --noconfirm --needed gimp imagemagick inkscape
+sudo pacman -S --noconfirm --needed gimp imagemagick inkscapesudo 
+sudo pacman -S --noconfirm --needed scribus
 sudo pacman -S --noconfirm --needed git dkms
 sudo pacman -S --noconfirm --needed redshift powertop 
 sudo pacman -S --noconfirm --needed liferea 
