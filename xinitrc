@@ -10,19 +10,22 @@
 # 	done &
 # Status bar
 # Autostart section
-if [ ! -z "$(xrandr | grep "VGA1 connected")" ] || [ ! -z "$(xrandr | grep "HDMI1 connected")" ]; then
-	~/Packages/scripts/screen_2nd.sh
-else
-	~/Packages/scripts/screen_1st.sh
-fi &
-picom &
-redshift-gtk &
 dir=~/.local/share/bg
 xwallpaper --stretch $dir &
+picom &
+redshift-gtk &
 # -R restores the last colorscheme that was in use.
 #wal -R &
 dwmblocks &
-#exec dwm 
-dbus-launch --sh-syntax --exit-with-session dwm
+if [ ! -z "$(xrandr | grep "VGA1 connected")" ] || [ ! -z "$(xrandr | grep "HDMI1 connected")" ]; then
+#	~/Packages/scripts/screen_2nd.sh
+	sleep 5s
+	bash ~/Packages/scripts/./screen_right.sh
+else
+	bash ~/Packages/scripts/./screen_1st.sh
+fi &
 
+#exec dwm 
+#dbus-launch --sh-syntax --exit-with-session dwm
+dbus-run-session dwm
 

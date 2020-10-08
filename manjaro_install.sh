@@ -11,6 +11,8 @@ sudo pacman -S --noconfirm --needed git dkms
 sudo pacman -S --noconfirm --needed redshift powertop 
 sudo pacman -S --noconfirm --needed liferea 
 sudo pacman -S --noconfirm --needed rhythmbox cmus
+sudo pacman -S --noconfirm --needed gnome-calendar
+sudo pacman -S --noconfirm --needed simple-scan
 #_________For_mesa_OpenGL_________________________#
 sudo pacman -S --noconfirm --needed libgl mesa 
 #_________HDD_shock_protection____________________#
@@ -18,7 +20,7 @@ sudo pacman -S --noconfirm --needed  hdapsd
 #_________For_OpenCL_ob_Gen7_Ivy Bridge_Intel_GPU_____#
 sudo pacman -S --noconfirm --needed beignet ocl-icd opencl-headers
 #_________For_Emoji_______________________________#
-#sudo pacman -S --noconfirm --needed noto-fonts-emoji ttf-joypixels 
+sudo pacman -S --noconfirm --needed noto-fonts-emoji ttf-joypixels 
 #_________For_Dwm_________________________________#
 sudo pacman -S --noconfirm --needed dmenu 
 sudo pacman -S --noconfirm --needed picom
